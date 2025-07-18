@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>AHG 2020 Proposal Submission Form</title>
+    <link rel="stylesheet" href="css/ahgformstyle2020after.css" type="text/css" media="screen">
+</head>
+
+<body>
+    <main role="main">
+        <section role="form">
+            <div id="formheader">
+                <h1 id="formstart">AHG Presenter Proposal Form 2020</h1>
+                <p class="outline3">Accessing Higher Ground: Accessible Web, Media and Technology Conference November 16 - 20, 2020</p>
+                <p class="instructions">All fields marked with * are required. Please complete all fields accurately. Use keyboard navigation or assistive technology as needed. Required fields include First Name, Last Name, Degree, Phone Number, Email, and Proposal Title.</p>
+            </div>
+
+            <h2 class="outline4">Speaker Information</h2>
+            <form action="AHG_saveprop2020.php" method="post" id="AHGproposalform2020">
+
+                <fieldset class="speakerinfo">
+                    <legend>1st Presenter*</legend>
+                    <ul>
+                        <li>
+                            <label for="fstspkr1">First Name:</label>
+                            <input id="fstspkr1" name="fstspkr1" type="text" required aria-required="true" />
+                        </li>
+                        <li>
+                            <label for="lstname1">Last Name:</label>
+                            <input id="lstname1" name="lstname1" type="text" required aria-required="true" />
+                        </li>
+                        <li>
+                            <label for="degree1">Highest Academic Degree:</label>
+                            <input id="degree1" name="degree1" type="text" required aria-required="true" />
+                        </li>
+                        <li>
+                            <label for="company1">Institution or Organization:</label>
+                            <input id="company1" name="company1" type="text" />
+                        </li>
+                        <li>
+                            <label for="telno1">Phone Number:</label>
+                            <input id="telno1" name="telno1" type="tel" required aria-required="true" />
+                        </li>
+                        <li>
+                            <label for="email1">E-mail:</label>
+                            <input id="email1" name="email1" type="email" required aria-required="true" />
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <fieldset class="spkrques">
+                    <legend>Presenter Experience*</legend>
+                    <p>Have you presented at a national conference or taught a college-level, semester-long course?</p>
+                    <div class="oneques">
+                        <span>
+                            <input value="1" id="natconfexp1_yes" name="natconfexp1" type="radio" />
+                            <label for="natconfexp1_yes">Yes</label>
+                        </span>
+                        <span>
+                            <input value="0" id="natconfexp1_no" name="natconfexp1" type="radio" />
+                            <label for="natconfexp1_no">No</label>
+                        </span>
+                    </div>
+                </fieldset>
+
+                <fieldset class="suggest_form">
+                    <legend>Presenter 1 Bio</legend>
+                    <label for="Speaker1bio">Please provide a short biography (1500 characters maximum):</label>
+                    <textarea id="Speaker1bio" name="Speaker1bio" cols="80" rows="4" minlength="50" maxlength="1500"></textarea>
+                </fieldset>
+
+                <h2 class="outline4">Proposal Information</h2>
+                <fieldset id="propinfo">
+                    <legend>Proposal Title*</legend>
+                    <ul>
+                        <li>
+                            <label for="proptitle">Proposal Title:</label>
+                            <input id="proptitle" name="proptitle" type="text" required aria-required="true" maxlength="150" />
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <input type="submit" value="Submit Your Proposal" />
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
